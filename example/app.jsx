@@ -1,9 +1,11 @@
-import {Template} from '../index.es6';
-
+import React from 'react'
+import { render } from 'react-dom'
+import App from '../src/js/components/App'
 
 window.onload = () => {
-  var template = ReactDOM.render(
-    <Template />,
-    document.getElementById('wrapper')
-  );
-}
+  let rootElement = document.getElementById('wrapper')
+  render(
+    <App />,
+    rootElement
+  )
+};
